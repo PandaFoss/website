@@ -1,2 +1,7 @@
-# archlinux-web
-New website for the Anarchy Linux project
+##  Anarchy Linux Webpage
+
+
+**Create new article:**
+Simply run the newarticle.sh script!
+
+*NOTE: The script should not move!*
