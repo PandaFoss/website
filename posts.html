@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Anarchy Linux - Announcement board</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/articles.css" />
+
+        <!--Favicon-->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Anarchy</strong> <span>Linux</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="features.html">Features</a></li>
+							<li><a href="screenshots.html">Screenshots</a></li>
+							<li><a href="posts.html">Posts</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="https://github.com/AnarchyLinux/anarchy-linux" class="button primary fit">Contribute</a></li>
+							<li><a href="https://github.com/AnarchyLinux/anarchy-linux/releases" class="button fit">Download</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+                                        <h1>Announcement board</h1>
+                                    </header>
+                                    <div id="myBtnContainer">
+                                        <p>Filter articles by tags:</p>
+                                        <button class="button active" onclick="filterSelection('all')"> Show all</button>
+                                        <button class="button" onclick="filterSelection('releases')"> Releases</button>
+                                        <button class="button" onclick="filterSelection('news')"> News</button>
+                                    </div>
+                                <div class="containerart">
+                                    <!-- Mark for script -->
+								    <div class="filterDiv news">
+                                        <h2 class="post">Telegram group</h2>
+										<h6 class="post"><b>September 12, 2019 by Panda Foss</b></h6>
+                                        <p>We’re announcing the creation of a discussion group in the Telegram instant messaging service.</p>
+                                        <p>You are invited to join the group by clicking on <a href="https://t.me/anarchy_linux">this link</a>, to discuss new ideas and features to be implemented in future releases.</p>
+                                        <p><i>Together we can make Anarchy more than just an installer!</i></p>
+                                        <p><b>We’re hoping to see you soon!</b></p>
+                                        <hr \>
+                                    </div>					
+                                    <div class="filterDiv releases">
+                                        <h2 class="post">Release v1.0.5</h2>
+										<h6 class="post"><b>September 4, 2019 by Erazem Kokot</b></h6>
+                                        <p>Another Anarchy update, yay!</p>
+                                        <p>1.0.5’s changelog is actually quite long, despite being a “patch” version.</p>
+                                        <p>You can check out the changelog <a href="https://github.com/AnarchyLinux/anarchy-linux/releases/tag/v1.0.5">on our release page</a> for a summary or continue reading for a more in-depth look into the changes.</p>
+                                        <p>Firstly we’ve completely removed the GUI installer, since it was very outdated and it hasn’t been built since like v1.0.0. AFAIK nobody has complained about the lack of GUI builds, but if enough people would like it back, it can be arranged, although we’d need some maintainers for it. This does not affect the installation of DEs and WMs, you can still choose all the ones you could before, it’s just that the installation takes place in a terminal.</p>
+                                        <p>We’ve also refactored the <code>anarchy-creator.sh</code> script to more closely follow bash best practices and we’ve renamed it to <code>iso-generator.sh</code> to make it less confusing, since anarchy-creator and anarchy-installer are similarly named, but do completely different things. Maybe we’ll move the anarchy-installer script to somewhere else at some point.</p>
+                                        <p>Something quite important was also added in v1.0.5: We’ve started generating proper checkums. You should now be able to use sha256sum to check if the image was properly downloaded.</p>
+                                        <p><code>arch-wiki(-cli)</code> was also completely removed in this version. To be fair, it was removed in v1.0.4 already, but the menu option still existed and didn’t work, so now it’s finally gone.</p>
+                                        <p>For those of you who want to compile your own Anarchy installers, we’ve made the script more verbose, with more helpful info and proper error exits.</p>
+                                        <p>French translations were updated, GREP_OPTIONS was removed from .zshrc, OpenJDK7 was replaced by OpenJDK8 in the optional software menu and OpenJDK11 & 12 were added as well. Also in the list of added packages were <code>youtube-dl</code> and <code>openssh</code> (which was added by default to our quick server installations)</p>
+                                        <p>The insertion of modules into <code>mkinitcpio.conf</code> was fixed and the issue of LUKS-encryped XFS installations not booting was resolved as well.</p>
+                                        <p>On the Github side of things we’ve also updated the README and have added issue and pull request templates - please use them.</p>
+                                        <p>A <a href="https://github.com/AnarchyLinux/anarchy-linux/blob/master/CONTRIBUTING.md">contributing guide</a> was also added, which can give you some ideas on how to contribute to the project.</p>
+                                        <p>Well, that just about sums it up, see you when the next release comes out ;)</p>
+                                        <hr \>
+                                    </div>
+                                    <div class="filterDiv news">
+                                        <h2 class="post">We'd like your feedback</h2>
+										<h6 class="post"><b>September 2, 2019 by Erazem Kokot</b></h6>
+                                        <p>Hello,</p>
+                                        <p>My name is Erazem and I’m a fairly new contributor to the Anarchy Linux project and the author of this website.</p>
+                                        <p>Like (hopefully) most of you reading this, I really like the project and as a beginner in open source I wanted to contribute to it. Since I only know a bit about bash scripting I haven’t been able to contribute much actual code yet, but that didn’t stop me from contributing altogether. And it shouldn’t stop you from contributing either.</p>
+                                        <p>If you know how to code in bash that’s great - find <a href="https://github.com/AnarchyLinux/anarchy-linux/issues">an issue</a> you like and help fix it, or even add a feature you’d like to see in Anarchy.</p>
+                                        <p>If you don’t know how to code there’s still a bunch of things to do - fix typos in the <a href="https://github.com/AnarchyLinux/anarchy-linux/blob/master/README.md">README</a>, update <a href="https://github.com/AnarchyLinux/anarchy-linux/tree/website-source">the website</a> or help translate the project.</p>
+                                        <p>If you can’t see yourself doing any of those things, you can still help us in other ways:</p>
+                                        <p>Test the software and report bugs</p>
+                                        <p>or</p>
+                                        <p>Give us feedback on the project:</p>
+                                        <ul>
+                                            <li>Tell us what you like/dislike about the new website design</li>
+                                            <li>Tell us what new features you’d like to see in the Anarchy installer</li>
+                                            <li>Tell us how we can help you contribute to the project (maybe you just need a mentor)</li>
+                                        </ul>
+                                        <p>As you can see there really are a lot of things you can do to contribute to this project and we would really appreciate it if you tried doing at least one of them.</p>
+                                        <p>Enjoy your experience with Anarchy Linux :)</p>
+                                        <hr \>
+                                    </div>
+                                    <div class="filterDiv releases">
+                                        <h2 class="post">Release 1.0.4</h2>
+										<h6 class="post"><b>September 1, 2019 by Erazem Kokot</b></h6>
+                                        <p>On June 8, 2019, Anarchy Linux received its <a href="https://github.com/AnarchyLinux/anarchy-linux/releases/tag/1.0.4">1.0.4 release</a>, finally. With the upcoming release of 1.0.5, which already has way more changes, we can safely say this was a minor release,<p>
+                                        <p>Changelog:</p>
+                                        <ul>
+                                            <li>QT4 was removed from the package list</li>
+                                            <li>MongoDB was removed from the optional software list</li>
+                                            <li>A timeout was added to the syslinux config file</li>
+                                            <li>arch-wiki-cli was removed from the package list</li>
+                                        </ul>
+                                        <hr \>
+                                    </div>
+                                    <div class="filterDiv news">
+                                        <h2 class="post">New Website</h2>
+										<h6 class="post"><b>September 1, 2019 by Erazem Kokot</b></h6>
+                                        <p>You’ve stumbled upon our revamped website. It was built to be modern and fast using the <a href="https://gohugo.io/">Hugo</a> static website generator and the <a href="https://github.com/danielkvist/hugo-terrassa-theme">Terrassa theme</a>.</p>
+                                        <p>If you haven’t already, check out our <a href="https://github.com/AnarchyLinux/anarchy-linux">Github project page</a>.</p>
+                                        <hr \>
+                                    </div>
+                                </div>
+                                </div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+            		<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="irc://freenode/anarchy-linux" target="_blank" class="icon regular alt fa-comments"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/groups/archanywhere/" target="_blank" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://github.com/AnarchyLinux/anarchy-linux" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://t.me/anarchy_linux" target="_blank" class="icon brands alt fa-telegram"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>Anarchy Linux</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/articles.js"></script>
+
+	</body>
+</html>
