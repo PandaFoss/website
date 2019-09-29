@@ -63,6 +63,53 @@
                                     </div>
                                 <div class="containerart">
                                     <!-- Mark for script -->
+									<div class="filterDiv releases">
+
+										<h2 class="post">Release v1.0.6</h2>
+
+										<h6 class="post"><b>September 29, 2019 by condor2</b></h6>
+
+<p>Less than one month after the last release we are bringing you a shiny new one - v1.0.6.</p>
+<p>We’ve gone all out on this patch release - fixing bugs, adding new features and updating translations.</p>
+<p>As always you can find the release on <a href="https://github.com/AnarchyLinux/installer/releases/tag/v1.0.6">our Github releases page</a>.</p>
+<p>Here’s a quick rundown of our changes:</p>
+<h3 id="translations">Translations</h3>
+<p>We’ve updated the Portuguese, French, Spanish and Romanian translations.</p>
+<h3 id="changes-to-packages">Changes to packages</h3>
+<p>The following packages were removed:</p>
+<ul>
+<li><code>rethinkdb</code></li>
+<li><code>alienarena</code></li>
+<li><code>flightgear</code></li>
+<li><code>urbanterror</code></li>
+</ul>
+<p>They’ve all been moved to the AUR, so we currently don’t offer them as optional software.</p>
+<p>The following packages were renamed:</p>
+<ul>
+<li><code>dlang-dmd</code></li>
+<li><code>java-openjfx</code></li>
+<li>some other java versions</li>
+</ul>
+<p>These all still work properly, but have been renamed by Arch packagers.</p>
+<h3 id="new-features">New features</h3>
+<ul>
+<li><code>yay</code> was added to custom DE installations</li>
+<li>Qtile Window Manager was added as an optional DE/WM</li>
+</ul>
+<h3 id="other-notable-features">Other notable features</h3>
+<ul>
+<li>We’ve cleaned the codebase up quite a bit</li>
+<li><code>anarchy -u</code> works properly now - didn’t work because of the new repo url</li>
+<li>We’ve completely reinvented the <code>iso-generator</code> script</li>
+<li>Logging is now enabled in <code>iso-generator.sh</code> (<code>log/</code> directory)</li>
+<li>Generated ISOs are moved to the <code>out/</code> directory</li>
+</ul>
+<h3 id="docker-support">Docker support</h3>
+<p>I’m currently working on supporting Docker for generating the Anarchy ISO. You can track my progress in the <a href="https://github.com/AnarchyLinux/docker">AnarchyLinux/docker</a> repository.</p>
+<p>This will also mean some changes to the <code>iso-generator.sh</code> script, such as adding optional arguments, like <code>--no-color</code> and <code>--no-input</code>, with something like <code>--arch-iso</code>, <code>--output-dir</code> and <code>--log-dir</code> planned for the future, to enable custom folders for use with Docker.</p>
+<p>That’s pretty much it for this release, you can find the full changelog <a href="https://github.com/AnarchyLinux/installer/blob/master/CHANGELOG.md">here</a>.</p>
+<hr \>
+</div>
 								    <div class="filterDiv news">
                                         <h2 class="post">Telegram group</h2>
 										<h6 class="post"><b>September 12, 2019 by Panda Foss</b></h6>
