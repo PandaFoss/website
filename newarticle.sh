@@ -14,7 +14,12 @@ check_dependencies() {
             ;;
         esac
     fi
-    echo -e "Dependencies satisfied!\n"
+    if [[ $? -eq 0 ]]; then
+        echo -e "Dependencies satisfied!\n"
+    else
+        echo "Error: Missing dependencies, exiting."
+        exit 1
+    fi
 }
 
 new_file() {
